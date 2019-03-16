@@ -6,7 +6,8 @@ package:
   version: "{{ version }}"
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/12/5e/90d72f6a0e1eef532326781e34ede3b5de046302d1a134f162f3796e4c85/parfive-0.2.1.tar.gz
   sha256: 4b0c8ad3c6583e9f8bbd27454a498d2c9d6762870d63377ff09978f07fa784be
 
 build:

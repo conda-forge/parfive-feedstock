@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About parfive
 =============
 
@@ -18,8 +14,17 @@ Summary: A parallel file downloader using asyncio.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/parfive-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/parfive-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6379&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/parfive-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================

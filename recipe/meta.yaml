@@ -12,7 +12,8 @@ source:
 build:
   number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
-  noarch: python  # [py<36]
+  noarch: python
+  skip: true  # [py<36]
 
 requirements:
   host:

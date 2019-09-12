@@ -10,17 +10,17 @@ source:
   sha256: 15dc8466922c8fb1f814d3f7c3f3656191ac17b38fd7cc3350b9bf726e144ebb 
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
   noarch: python
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools_scm
   run:
-    - python
+    - python >=3.6
     - setuptools
     - tqdm
     - aiohttp

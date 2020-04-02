@@ -1,17 +1,17 @@
 {% set name = "parfive" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 15dc8466922c8fb1f814d3f7c3f3656191ac17b38fd7cc3350b9bf726e144ebb 
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: bfb9417f8509dd523729d41c320580f9dbc4cae8a8638286fd690e98d4d87017
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  number: 0
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
 
 requirements:

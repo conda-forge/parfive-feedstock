@@ -10,7 +10,7 @@ source:
   sha256: faa60c34dfbd080f011c1af0587f932874dcdf602d0336227d540899dbc41b50
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
 
@@ -35,7 +35,7 @@ test:
     - pytest-asyncio
     - pytest-socket
   commands:
-    - pytest --pyargs parfive
+    - pytest --pyargs parfive -m "not allow_hosts"
 
 about:
   home: https://parfive.readthedocs.io/en/latest/

@@ -35,7 +35,7 @@ test:
     - pytest-asyncio
     - pytest-socket
   commands:
-    - pytest --pyargs parfive
+    - pytest --pyargs parfive -m "not allow_hosts"
 
 about:
   home: https://parfive.readthedocs.io/en/latest/

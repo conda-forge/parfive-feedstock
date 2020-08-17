@@ -5,7 +5,7 @@ Home: https://parfive.readthedocs.io/en/latest/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A parallel file downloader using asyncio.
 

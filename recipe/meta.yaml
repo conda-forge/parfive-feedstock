@@ -23,7 +23,7 @@ requirements:
     - setuptools
     - tqdm
     - aiohttp
-    - aioftp <=0.16.1  # [py=36]
+    - aioftp <=0.16.1  # [py36]
     - aioftp  # [py>36]
 
 test:

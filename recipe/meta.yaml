@@ -19,7 +19,7 @@ requirements:
     - python
     - setuptools_scm
   run:
-    - python >=3.6
+    - python
     - setuptools
     - tqdm
     - aiohttp

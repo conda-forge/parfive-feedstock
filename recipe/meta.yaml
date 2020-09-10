@@ -10,21 +10,21 @@ source:
   sha256: 90dfb05d0a65d00669f5245371a4b33cbebcb5cfba86f4aad7f956984394eefd
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
     - setuptools_scm
   run:
-    - python >=3.6
+    - python
     - setuptools
     - tqdm
     - aiohttp
-    - aioftp
+    - aioftp <=0.16.1
 
 test:
   imports:

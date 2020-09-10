@@ -12,6 +12,7 @@ source:
 build:
   number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  noarch: python
 
 requirements:
   host:
@@ -23,8 +24,7 @@ requirements:
     - setuptools
     - tqdm
     - aiohttp
-    - aioftp <=0.16.1  # [py36]
-    - aioftp  # [py>36]
+    - aioftp <=0.16.1
 
 test:
   imports:

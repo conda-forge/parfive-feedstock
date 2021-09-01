@@ -25,6 +25,7 @@ requirements:
     - tqdm
     - aiohttp
     - aioftp
+    - aiofiles
 
 test:
   imports:

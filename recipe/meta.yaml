@@ -1,5 +1,5 @@
 {% set name = "parfive" %}
-{% set version = "1.3.0" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c3067e6ca9d6fb88a10958338360bd9c47edfd8ab11098d4c601f7f2887edadd
+  sha256: 66ab18a9f7cad8c75dfe07e5302b63c6259cd3fdf38af2dfb3f01300a5fefceb
 
 build:
   number: 0
@@ -25,6 +25,7 @@ requirements:
     - tqdm
     - aiohttp
     - aioftp
+    - aiofiles
 
 test:
   imports:

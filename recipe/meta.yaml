@@ -1,5 +1,5 @@
 {% set name = "parfive" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 66ab18a9f7cad8c75dfe07e5302b63c6259cd3fdf38af2dfb3f01300a5fefceb
+  sha256: f36128e8a93f3494ce3de8af883eeba4bd651ab228682810a46ec4b7897a84b3
 
 build:
   number: 0

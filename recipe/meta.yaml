@@ -1,5 +1,5 @@
 {% set name = "parfive" %}
-{% set version = "1.5.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c411fd7269a49d1c72a964e97de474ec082115777b363aeed98a6595f90b8676
+  sha256: 608e5674184796c6d2e24e2ca4cddc0baf77eb8328899a5dff5ad639f236b270
 
 build:
   number: 0
@@ -36,7 +36,7 @@ test:
     - pytest-asyncio
     - pytest-socket
   commands:
-    - pytest --pyargs parfive -m "not allow_hosts"
+    - pytest --pyargs parfive -m "not allow_hosts" -k "not test_session_config_defaults"
 
 about:
   home: https://parfive.readthedocs.io/en/latest/

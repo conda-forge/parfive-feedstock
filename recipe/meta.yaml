@@ -1,5 +1,5 @@
 {% set name = "parfive" %}
-{% set version = "2.0.2" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 908211f9c5cb52dc8b279626872095f3cce15da86893f53b4176deceddcfc85d
+  sha256: cd6cb419242130730cf41d4cf6f284ebf50f1a71ce6c9508e0467ec98f17dc8e
 
 build:
   number: 0
@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools_scm
   run:
-    - python >=3.7
+    - python >=3.8
     - setuptools
     - tqdm
     - aiohttp

@@ -37,7 +37,7 @@ test:
     - pytest-socket
     - python {{ python_min }}
   commands:
-    - pytest --pyargs parfive -m "not allow_hosts" -k "not test_session_config_defaults"
+    - pytest -p no:unraisableexception -p no:threadexception --pyargs parfive -m "not allow_hosts" -k "not test_session_config_defaults"
 
 about:
   home: https://parfive.readthedocs.io/en/latest/

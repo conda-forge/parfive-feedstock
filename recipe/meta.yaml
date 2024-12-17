@@ -18,10 +18,10 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - setuptools
     - tqdm
     - aiohttp
     - aioftp
@@ -51,3 +51,4 @@ extra:
   recipe-maintainers:
     - Cadair
     - nabobalis
+    - wtbarnes
